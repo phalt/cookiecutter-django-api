@@ -9,31 +9,31 @@ Featuring:
 
 ## Installation:
 
-1. Install [cookicutter](https://cookiecutter.rtfd.org).
+- Install [cookiecutter](https://cookiecutter.rtfd.org).
 
-2. Use cookiecutter to make a copy:
+- Use cookiecutter to make a copy:
 
 ```
 $ cookiecutter https://github.com/phalt/cookiecutter-django-api.git
 project_name (default is 'project_name'):
 ```
 
-3. Set things up:
+- Set things up:
 
 ```
 cd project_name
 make install
 ```
 
-4. Write your models in resources/models.
+- Write your models in resources/models.
 
-5. Generate and setup your models:
+- Generate and setup your models:
 
 ```
 make build
 ```
 
-6. Run the server!
+- Run the server!
 
 ```
 make serve
