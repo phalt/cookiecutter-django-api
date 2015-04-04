@@ -1,6 +1,6 @@
 from __future__ import unicode_literals
 
-from django.conf.urls import patterns, url, include
+from django.conf.urls import url, include
 from django.contrib import admin
 admin.autodiscover()
 
@@ -16,6 +16,6 @@ router.register(r"base", resource_views.BaseViewSet)
 
 urlpatterns = [
     url(r"^admin/", include(admin.site.urls)),
-    url(r'^$', views.myview),
+    url(r'^$', views.index),
     url(r"^api/", include(router.urls)),
 ]

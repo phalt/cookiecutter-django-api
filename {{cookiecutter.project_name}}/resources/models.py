@@ -20,4 +20,4 @@ class BaseModel(DateTimeModel):
     def __unicode__(self):
         return self.text
 
-    text = CharField(max_length=100)
+    text = models.CharField(max_length=100)
