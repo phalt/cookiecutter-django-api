@@ -13,9 +13,6 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='BaseModel',
             fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('created', models.DateTimeField(auto_now_add=True)),
-                ('edited', models.DateTimeField(auto_now=True)),
                 ('text', models.CharField(max_length=100)),
             ],
             options={

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 import dj_database_url
 
@@ -54,7 +55,7 @@ USE_L10N = True
 USE_TZ = True
 
 if not DEBUG:
-    DATABASES['default'] =  dj_database_url.config()
+    DATABASES['default'] = dj_database_url.config()
 
     DATABASES['default']['ENGINE'] = 'django_postgrespool'
 
@@ -73,7 +74,7 @@ STATICFILES_DIRS = (
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates'),],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'), ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -2,8 +2,7 @@
 install:
 	pip install -r requirements.txt
 
-build:
-	python manage.py makemigrations resources
+setup:
 	python manage.py migrate
 	python manage.py createsuperuser
 

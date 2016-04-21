@@ -1,10 +1,8 @@
+# -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
 from django.test import TestCase
 
-from .models import (
-    BaseModel
-)
 
 class TestAllEndpoints(TestCase):
     """ Test ALL the endpoints """

@@ -1,20 +1,10 @@
+# -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
 from django.db import models
 
 
-class DateTimeModel(models.Model):
-    """ A base model with created and edited datetime fields """
-
-    class Meta:
-        abstract = True
-
-    created = models.DateTimeField(auto_now_add=True)
-
-    edited = models.DateTimeField(auto_now=True)
-
-
-class BaseModel(DateTimeModel):
+class BaseModel(models.Model):
     """ A base models """
 
     def __unicode__(self):
